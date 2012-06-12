@@ -5,25 +5,15 @@ body {
     position: relative;
 }
 body > div {
+    display: block;
     border: 1px solid white;
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 2px 3px #474C46 inset, 0 0 2px 2px #B6BABB;
     background: -webkit-gradient(linear, left top, left bottom, from(#000097), to(#000030));
     padding: 5px 10px 10px;
 }
-body > div#emergency {
-    background: -webkit-gradient(linear, left top, left bottom, from(#901089), to(#940D47));
-}
-body > div#emergency #title {
-    background-image:-webkit-gradient(linear, left top, right top, color-stop(0, #31BBBE), color-stop(0.2, #246851), color-stop(0.4, #6A008F), color-stop(0.6, #860D20), color-stop(0.8, #1A52A7));
-    color:transparent;
-    -webkit-background-clip: text;
-    text-shadow: 0 0 1px rgba(0,0,0,0.2);
-}
 #icon {
     float: left;
-    top: 10px;
-    left: 10px;
     width: 32px;
     height: 32px;
     margin-right: 5px;
@@ -36,9 +26,35 @@ body > div#emergency #title {
     font-weight: bold;
     font-size: medium;
     float: left;
-    margin-top: 5px;
+    max-width: 180px;
 }
 #text {
     font-size:small;
     display: inline-block;
+}
+
+/* Level 1 */
+body > div#verylow {
+}
+
+/* Level 2 */
+body > div#moderate {
+}
+
+/* Level 3 */
+body > div#normal {
+}
+
+/* Limit Break Available */
+/*body > div#high #title {*/
+body > div #title {
+    background-image: url('rainbow.gif');
+    color:transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+/* LIMIT BREAK! */
+body > div#emergency {
+    background: -webkit-gradient(linear, left top, left bottom, from(#901089), to(#940D47));
 }
